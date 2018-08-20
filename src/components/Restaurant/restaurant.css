@@ -1,0 +1,25 @@
+.iconDetails {
+  margin-left: 0%;
+  float: left;
+  height: 100px;
+  width: 150px;
+}
+
+.container2 {
+  width: auto;
+  height: auto;
+  padding: 0%;
+  float: left;
+}
+h4 {
+  margin: 0;
+}
+.left {
+  float: left;
+  width: 45px;
+}
+.right {
+  float: left;
+  width: 200px;
+  margin: 0px;
+}

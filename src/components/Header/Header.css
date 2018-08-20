@@ -1,0 +1,9 @@
+.header {
+  color: rgb(252, 247, 247);
+  background-image: url("../images/Main2.jpg");
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  width: 500px;
+  margin-bottom: 10px;
+}
