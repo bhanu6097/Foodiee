@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import App from "../src/components/Restaurant/App";
 //import registerServiceWorker from "./registerServiceWorker";
 import { HashRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
