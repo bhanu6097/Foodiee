@@ -1,22 +1,34 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Counter extends Component {
+class Counter extends React.Component {
   constructor() {
     super();
     this.state = {
-      itemCount: 0
+      count: 0
     };
-    this.increement = this.increement.bind(this);
   }
-  increement = () => {
-    this.setState = { itemCount: this.state.itemCount + 1 };
+  incrementCount = () => {
+    this.setState({
+      count: this.state.count + 1
+    });
+  };
+  decrementCount = () => {
+    if (this.state.count !== 0) {
+      this.setState({
+        count: this.state.count - 1
+      });
+    } else {
+      this.setState({
+        count: 0
+      });
+    }
   };
   render() {
     return (
       <div>
-        <button onClick="Decreement">-</button>
-        {this.state.itemCount}
-        <button onClick="increement">+</button>
+        <button onClick={this.incrementCount}>+</button>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.decrementCount}>-</button>
       </div>
     );
   }

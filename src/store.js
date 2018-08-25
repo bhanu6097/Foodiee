@@ -1,5 +1,10 @@
-import React, { Component } from "react";
+import { createStore, combineReducers } from "redux";
+import { restaurantReducer } from "../src/components/Reducer/RestaurantReducer";
 
-class store extends Component {}
+const rootReducer = combineReducers({
+  restaurantReducer
+});
+
+const store = createStore(rootReducer);
 
 export default store;

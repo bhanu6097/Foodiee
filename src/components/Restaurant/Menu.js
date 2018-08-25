@@ -1,14 +1,21 @@
 import React, { Component } from "react";
-import { items } from "./ItemList";
 import Counter from "./Counter";
+import { restaurants } from "./Restaurants";
 
 class Menu extends Component {
   render() {
     return (
       <div>
-        {Object.keys(items).map(key => (
+        {Object.keys(restaurants).map(key => (
           <div>
-            <h5>{items[key].title}</h5>
+            {restaurants[key].items.map((e, i) => {
+              return (
+                <div>
+                  <h4>{e.title}</h4>
+                  <h4>{e.price}</h4>
+                </div>
+              );
+            })}
             <Counter />
           </div>
         ))}
